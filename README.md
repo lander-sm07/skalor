@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎮 CodeQuest — Gamified Leerplatform
 
 > *Studeren hoeft niet alleen te zijn.*
@@ -114,3 +115,6 @@ Gebruik deze prefixes voor duidelijke commits:
 ## 📝 Licentie
 
 Dit project is gemaakt als schoolopdracht voor Thomas More hogeschool.
+=======
+# skalor
+>>>>>>> f6410154c1e180e0508ed7340dcaa3278b817dea
