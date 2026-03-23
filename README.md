@@ -9,11 +9,12 @@ Skalor is een gamified leerplatform voor middelbare scholieren dat hen helpt hun
 
 ## 👥 Team
 
-| Naam | Rol |
-| Nick Janssens |Scrum Master|
-| Lander Smits | Developer |
-| Tibo Cop | Developer |
-| Sten Braet | Developer |
+| Naam           | Rol           |
+|----------------|---------------|
+| Nick Janssens  | Scrum Master  |
+| Lander Smits   | Developer     |
+| Tibo Cop       | Developer     |
+| Sten Braet     | Developer     |
 
 ---
 
@@ -56,4 +57,3 @@ Skalor/
 ## 📝 Licentie
 
 Dit project is gemaakt als schoolopdracht voor Thomas More hogeschool.
-
