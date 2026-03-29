@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Skalor demo - gamified leerplatform voor middelbare scholieren." />
+    <title>Skalor Demo</title>
+
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/global_vars.css" />
+    <link rel="stylesheet" href="../static/css/demo.css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a href="#top" class="brand" aria-label="Ga naar boven">
+            <img src="../static/images/Skalor_Logo.png" alt="Skalor logo" class="brand-logo" />
+        </a>
+
+        <div class="nav-actions">
+            <span class="coin-badge">🪙 <span id="coin-count">120</span> Coins</span>
+        </div>
+    </div>
+</header>
+
+<main id="top">
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="eyebrow">Gamified leerplatform</p>
+                <h1>Level je leerproces op met <span>Skalor</span></h1>
+                <p class="hero-text">
+                    Verdien coins, speel skills vrij, upgrade je avatar en krijg hulp van je AI coach.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#skill-tree" class="btn btn-primary">Start demo</a>
+                    <a href="#shop" class="btn btn-outline">Bekijk shop</a>
+                </div>
+            </div>
+
+            <div class="hero-card glass-card">
+                <div class="hero-card-top">
+                    <span class="status-badge">Live Demo</span>
+                    <span class="status-badge">Level <span id="player-level">1</span></span>
+                </div>
+
+                <div class="coach-message">
+                    <p class="coach-label">AI Coach</p>
+                    <p id="coach-text">Welkom terug. Rond een skill af om progressie te maken.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill-tree" class="section">
+        <div class="container">
+            <div class="section-heading center">
+                <p class="eyebrow">Skill Tree</p>
+                <h2>Speel vaardigheden vrij</h2>
+                <p>Klik op een skill om ze te voltooien en coins te verdienen.</p>
+            </div>
+
+            <div class="feature-grid">
+                <button class="feature-card glass-card skill-btn unlocked" data-skill="Basis 1" data-reward="0">
+                    <div class="feature-icon">✅</div>
+                    <h3>Basis 1</h3>
+                    <p>Al vrijgespeeld</p>
+                </button>
+
+                <button class="feature-card glass-card skill-btn unlocked" data-skill="Basis 2" data-reward="0">
+                    <div class="feature-icon">✅</div>
+                    <h3>Basis 2</h3>
+                    <p>Al vrijgespeeld</p>
+                </button>
+
+                <button
+                        class="feature-card glass-card skill-btn unlockable interactive-skill"
+                        data-skill="Skill A"
+                        data-reward="20"
+                        data-question="Wat is 2 + 2?"
+                        data-option-a="3"
+                        data-option-b="4"
+                        data-option-c="5"
+                        data-correct="4"
+                >
+                    <div class="feature-icon">🌱</div>
+                    <h3>Skill A</h3>
+                    <p>Mini-quiz · verdien 20 coins</p>
+                </button>
+
+                <button class="feature-card glass-card skill-btn unlockable" data-skill="Skill B" data-reward="20">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Skill B</h3>
+                    <p>Verdien 20 coins</p>
+                </button>
+
+                <button class="feature-card glass-card skill-btn locked" data-skill="Pro Skill" data-reward="40">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Pro Skill</h3>
+                    <p>Beschikbaar na progressie</p>
+                </button>
+
+                <button class="feature-card glass-card skill-btn locked" data-skill="Master Skill" data-reward="40">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Master Skill</h3>
+                    <p>Beschikbaar na progressie</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="section alt-section">
+        <div class="container">
+            <div class="section-heading center">
+                <p class="eyebrow">Shop</p>
+                <h2>Gebruik je coins</h2>
+                <p>Koop upgrades voor je profiel en demo-progressie.</p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card glass-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>Avatar Upgrade</h3>
+                    <p>Maak je profiel sterker zichtbaar.</p>
+                    <button class="btn btn-primary buy-btn" data-cost="30" data-item="Avatar Upgrade">
+                        Koop voor 30
+                    </button>
+                </article>
+
+                <article class="feature-card glass-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Level Boost</h3>
+                    <p>Verhoog je level voor de demo.</p>
+                    <button class="btn btn-primary buy-btn" data-cost="50" data-item="Level Boost">
+                        Koop voor 50
+                    </button>
+                </article>
+
+                <article class="feature-card glass-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Coach Hint</h3>
+                    <p>Ontvang extra hulp van de AI coach.</p>
+                    <button class="btn btn-primary buy-btn" data-cost="25" data-item="Coach Hint">
+                        Koop voor 25
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container split-layout">
+            <div class="glass-card progress-panel">
+                <p class="eyebrow">Avatar</p>
+                <h2>Profielstatus</h2>
+                <div class="feature-icon" id="avatar-icon">🙂</div>
+                <p id="avatar-status">Starter Rank</p>
+            </div>
+
+            <div class="glass-card ai-panel">
+                <p class="eyebrow">Activiteit</p>
+                <h2>Laatste actie</h2>
+                <div class="chat-bubble coach" id="activity-log">
+                    Demo gestart. Klaar om een skill vrij te spelen.
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- QUIZ MODAL -->
+<div id="quiz-modal" class="quiz-modal hidden" aria-hidden="true">
+    <div class="quiz-box glass-card">
+        <p class="eyebrow">Mini-opdracht</p>
+        <h2 id="quiz-question">Vraag komt hier</h2>
+
+        <div class="quiz-options">
+            <button class="quiz-option" data-answer="" id="quiz-option-a">Optie A</button>
+            <button class="quiz-option" data-answer="" id="quiz-option-b">Optie B</button>
+            <button class="quiz-option" data-answer="" id="quiz-option-c">Optie C</button>
+        </div>
+
+        <p id="quiz-feedback"></p>
+
+        <div class="quiz-actions">
+            <button id="quiz-close" class="btn btn-outline">Sluiten</button>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container footer-wrapper">
+        <div>
+            <h3>Skalor</h3>
+            <p>Skills Integration Lab · Demo</p>
+        </div>
+        <div>
+            <p>&copy; 2026 Skalor</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../static/js/app_demo.js"></script>
+</body>
+</html>
