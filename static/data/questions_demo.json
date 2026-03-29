@@ -1,0 +1,68 @@
+[
+  {
+    "subject": "Biologie",
+    "question": "Wat is de functie van DNA?",
+    "options": [
+      "Energie produceren",
+      "Erfelijke informatie opslaan",
+      "Zuurstof transporteren"
+    ],
+    "correct": "Erfelijke informatie opslaan",
+    "reward": 20
+  },
+  {
+    "subject": "Nederlands",
+    "question": "Wat is een synoniem van 'snel'?",
+    "options": [
+      "Traag",
+      "Langzaam",
+      "Vlug"
+    ],
+    "correct": "Vlug",
+    "reward": 20
+  },
+  {
+    "subject": "Wiskunde",
+    "question": "Wat is de oplossing van 3x² = 27?",
+    "options": [
+      "x = 3",
+      "x = 9",
+      "x = 6"
+    ],
+    "correct": "x = 3",
+    "reward": 25
+  },
+  {
+    "subject": "Informatica",
+    "question": "Wat doet een if-statement in Python?",
+    "options": [
+      "Herhaalt code",
+      "Maakt een keuze op basis van een conditie",
+      "Slaat gegevens op"
+    ],
+    "correct": "Maakt een keuze op basis van een conditie",
+    "reward": 20
+  },
+  {
+    "subject": "Chemie",
+    "question": "Wat is de chemische formule van water?",
+    "options": [
+      "CO2",
+      "H2O",
+      "O2"
+    ],
+    "correct": "H2O",
+    "reward": 20
+  },
+  {
+    "subject": "Fysica",
+    "question": "Wat is de eenheid van kracht?",
+    "options": [
+      "Watt",
+      "Newton",
+      "Volt"
+    ],
+    "correct": "Newton",
+    "reward": 20
+  }
+]

@@ -1,8 +1,8 @@
-# 🎮 Skalor — Gamified Leerplatform
+# 🎮 Skalor - Gamified Leerplatform
 
 Skalor is een gamified leerplatform voor middelbare scholieren dat hen helpt hun **studiedoelen** te bereiken door middel van een skill tree, currency systeem, en AI-coaching.
 
-**Leerdoel:** Software bewerken (07.09.01) — De leerlingen bewerken software om een specifiek product te maken of om een probleem op te lossen.
+**Leerdoel:** Software bewerken (07.09.01) - De leerlingen bewerken software om een specifiek product te maken of om een probleem op te lossen.
 
 ---
 
