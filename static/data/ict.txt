@@ -1,0 +1,4 @@
+Een if-statement is een programmeerstructuur die een beslissing maakt op basis van een conditie. 
+Als de conditie waar is, wordt een bepaald stuk code uitgevoerd. 
+Als de conditie niet waar is, kan een ander stuk code uitgevoerd worden met een else-statement. 
+If-statements worden gebruikt om programma's flexibel en dynamisch te maken.

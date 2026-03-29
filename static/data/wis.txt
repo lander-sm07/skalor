@@ -1,0 +1,4 @@
+Een kwadratische vergelijking is een vergelijking van de vorm ax² + bx + c = 0. 
+Om deze op te lossen kan men de discriminant gebruiken, die berekend wordt met de formule b² - 4ac. 
+Afhankelijk van de waarde van de discriminant zijn er nul, één of twee oplossingen. 
+De oplossingen kunnen berekend worden met de formule x = (-b ± √(b² - 4ac)) / 2a.
