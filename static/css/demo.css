@@ -202,6 +202,14 @@ button {
   gap: 0.75rem;
 }
 
+.coin-label {
+  margin-left: 0.25rem;
+}
+
+.level-label {
+  margin-right: 0.25rem;
+}
+
 .coin-badge,
 .status-badge {
   display: inline-flex;
@@ -778,4 +786,13 @@ button {
   .quiz-box {
     padding: 1.25rem;
   }
+}
+
+#coin-count,
+#player-level {
+  transition: transform 0.2s ease;
+}
+
+.bump {
+  transform: scale(1.2);
 }

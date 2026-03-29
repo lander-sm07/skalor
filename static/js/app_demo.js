@@ -13,8 +13,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   const skillButtons = document.querySelectorAll(".skill-btn");
 
   function updateUI() {
-    if (coinCount) coinCount.textContent = coins;
-    if (playerLevel) playerLevel.textContent = level;
+    if (coinCount) {
+      coinCount.textContent = coins;
+      animate(coinCount);
+    }
+    if (playerLevel) {
+      playerLevel.textContent = level;
+      animate(playerLevel);
+    }
   }
 
   function setCoachMessage(message) {
@@ -66,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     if (text) {
-      text.textContent = `Voltooid · +${reward} coins`;
+      text.textContent = `Voltooid · +${reward} Coins`;
     }
 
     if (completedSkills >= 2 && level === 1) {
@@ -76,8 +82,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     updateUI();
-    setCoachMessage(`Mooi. Je voltooide ${title} en verdiende ${reward} coins.`);
-    setActivity(`Skill voltooid: ${title} (+${reward} coins)`);
+    setCoachMessage(`Mooi. Je voltooide ${title} en verdiende ${reward} Coins.`);
+    setActivity(`Skill voltooid: ${title} (+${reward} Coins)`);
   }
 
   function createQuizModalIfNeeded() {
@@ -229,7 +235,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         option.classList.add("correct");
 
         if (quizFeedback) {
-          quizFeedback.textContent = `Correct! +${reward} coins`;
+          quizFeedback.textContent = `Correct! +${reward} Coins`;
         }
 
         markSkillCompleted(activeQuizSkill, reward);
