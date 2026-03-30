@@ -39,17 +39,30 @@ Skalor/
 │
 │
 ├── templates/
-│   └── index.html          # Hoofd HTML template
+│   ├── index.html          # Hoofd HTML template
+│   └── tree/               # HTML Files Skill Tree
+│       └── biology.html
+│       └── dutch.html
+│       └── it.html
+│       └── math.html
+│       └── physics.html
+│       └── science.html                      
 │
 └── static/
     ├── css/
-    │   └── main.css       # Alle styling
+    │   └── courses.css           # CSS voor Course Pages in Tree
+    │   └── main.css              # Alle styling
     │   └── global_vars.css       # Variables
     │   └── index.css       
-    │   └── demo.css       
+    │   └── demo.css              # CSS voor Demo Sprint 1
+    ├── data/                     # Volledige inhoud files Demo Sprint 1
+    │   └── bio.txt      
     ├── js/
-    │   └── app.js          # Client-side interactie
-    └── img/                # Afbeeldingen (voeg hier toe)
+    │   └── app_demo.js           # JS voor Demo Sprint 1
+    │   └── ai_demo.js            # AI voor Demo Sprint 1
+    │   └── app.js                # Client-side interactie
+    └── images/                   # Afbeeldingen (voeg hier toe)
+        └── Skalor_Logo.png         # Logo Image
 ```
 
 
