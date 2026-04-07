@@ -796,3 +796,56 @@ button {
 .bump {
   transform: scale(1.2);
 }
+
+ .nav-divider {
+   width: 0.5px;
+   height: 28px;
+   background: rgba(255, 255, 255, 0.12);
+ }
+
+.avatar-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 0.5px solid rgba(255, 255, 255, 0.13);
+  border-radius: 999px;
+  padding: 6px 14px 6px 10px;
+  color: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+  text-decoration: none;
+}
+
+.avatar-badge:hover {
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.avatar-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7f77dd, #1d9e75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar-circle i {
+  font-size: 15px;
+  color: #fff;
+}
+
+.avatar-name {
+  font-weight: 500;
+}
+
+.avatar-level {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 999px;
+  padding: 1px 7px;
+}

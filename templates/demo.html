@@ -11,180 +11,93 @@
   <link rel="stylesheet" href="../static/css/main.css" />
   <link rel="stylesheet" href="../static/css/global_vars.css" />
   <link rel="stylesheet" href="../static/css/demo.css" />
+
+
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <a href="#top" class="brand" aria-label="Ga naar boven">
-        <img src="../static/images/Skalor_Logo.png" alt="Skalor logo" class="brand-logo" />
-      </a>
+<header class="site-header">
+  <div class="container nav-wrapper">
+    <a href="#top" class="brand" aria-label="Ga naar boven">
+      <img src="../static/images/Skalor_Logo.png" alt="Skalor logo" class="brand-logo" />
+    </a>
 
-      <div class="nav-actions">
-        <span class="coin-badge">
-          <i class="fa-solid fa-coins"></i>
-          <span id="coin-count">120</span>
-          <span class="coin-label">Coins</span>
-        </span>
+    <div class="nav-actions">
+            <span class="coin-badge">
+                <i class="fa-solid fa-coins"></i>
+                <span id="coin-count">120</span>
+                <span class="coin-label">Coins</span>
+            </span>
+
+      <div class="nav-divider"></div>
+
+      <button class="avatar-badge" id="avatar-btn" aria-label="Bekijk avatar">
+        <div class="avatar-circle" id="avatar-initials">
+          <i class="fa-regular fa-face-smile"></i>
+        </div>
+        <span class="avatar-name">Avatar</span>
+        <span class="avatar-level">Lvl <span id="avatar-level-badge">1</span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow">Gamified leerplatform</p>
+        <h1>Level je leerproces op met <span>Skalor</span></h1>
+        <p class="hero-text">
+          Verdien coins, speel skills vrij, upgrade je avatar en krijg hulp van je AI coach.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#ai" class="btn btn-primary">
+            <i class="fa-solid fa-play"></i>
+            Start demo
+          </a>
+          <a href="main-tree.html" class="btn btn-primary">
+            <i class="fa-solid fa-sitemap"></i>
+            Skill Tree
+          </a>
+          <a href="avatar-shop.html" class="btn btn-primary">
+            <i class="fa-solid fa-person"></i>
+            Avatar Shop
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card glass-card">
+        <div class="hero-card-top">
+          <span class="status-badge">Live Demo</span>
+          <span class="status-badge">
+                        <span class="level-label">Level</span>
+                        <span id="player-level">1</span>
+                    </span>
+        </div>
+
+        <div class="coach-message">
+          <p class="coach-label">AI Coach</p>
+          <p id="coach-text">Welkom terug. Rond een skill af om progressie te maken.</p>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
+</main>
 
-  <main id="top">
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Gamified leerplatform</p>
-          <h1>Level je leerproces op met <span>Skalor</span></h1>
-          <p class="hero-text">
-            Verdien coins, speel skills vrij, upgrade je avatar en krijg hulp van je AI coach.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#ai" class="btn btn-primary">Start demo</a>
-          </div>
-        </div>
-
-        <div class="hero-card glass-card">
-          <div class="hero-card-top">
-            <span class="status-badge">Live Demo</span>
-            <span class="status-badge">
-               <span class="level-label">Level</span>
-                <span id="player-level">1</span>
-                </span>
-          </div>
-
-          <div class="coach-message">
-            <p class="coach-label">AI Coach</p>
-            <p id="coach-text">Welkom terug. Rond een skill af om progressie te maken.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- AI -->
-    <section id="ai" class="section">
-      <div class="container" style="margin-top: 2rem;">
-        <div class="glass-card" style="padding: 1.5rem; text-align: center;">
-          <p class="eyebrow">AI Demo</p>
-          <h2>Genereer quiz uit document</h2>
-
-          <input type="file" id="file-input" accept=".txt" />
-          <br /><br />
-          <select id="subject-select">
-            <option value="Biologie">Biologie</option>
-            <option value="Nederlands">Nederlands</option>
-            <option value="Wiskunde">Wiskunde</option>
-            <option value="Informatica">Informatica</option>
-            <option value="Chemie">Chemie</option>
-            <option value="Fysica">Fysica</option>
-          </select>
-
-          <br /><br />
-
-          <button id="generate-btn" class="btn btn-primary">
-            Genereer quiz
-          </button>
-          <p id="upload-status" class="upload-status"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skill Tree -->
-    
-    <section id="skill-tree" class="section">
-      <div class="container">
-        <div class="section-heading center">
-          <p class="eyebrow">Vakken</p>
-          <h2>Kies een vak en leer interactief</h2>
-          <p>Klik op een vak om een mini-opdracht te starten en coins te verdienen.</p>
-        </div>
-
-        <div class="feature-grid">
-          <button
-            class="feature-card glass-card skill-btn unlockable interactive-skill"
-            data-skill="Biologie"
-          >
-            <div class="feature-icon bio">
-              <i class="fa-solid fa-dna"></i>
-            </div>
-            <h3>Biologie</h3>
-            <p>Mini-quiz · verdien coins</p>
-          </button>
-
-          <button
-            class="feature-card glass-card skill-btn unlockable interactive-skill"
-            data-skill="Nederlands"
-          >
-            <div class="feature-icon lang">
-              <i class="fa-solid fa-comment-dots"></i>
-            </div>
-            <h3>Nederlands</h3>
-            <p>Mini-quiz · verdien coins</p>
-          </button>
-
-          <button
-            class="feature-card glass-card skill-btn unlockable interactive-skill"
-            data-skill="Wiskunde"
-          >
-            <div class="feature-icon math">
-              <i class="fa-solid fa-calculator"></i>
-            </div>
-            <h3>Wiskunde</h3>
-            <p>Uitdagend · verdien coins</p>
-          </button>
-
-          <button
-            class="feature-card glass-card skill-btn unlockable interactive-skill"
-            data-skill="Informatica"
-          >
-            <div class="feature-icon code">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <h3>Informatica</h3>
-            <p>Python · verdien coins</p>
-          </button>
-
-          <button
-            class="feature-card glass-card skill-btn unlockable interactive-skill"
-            data-skill="Chemie"
-          >
-            <div class="feature-icon chem">
-              <i class="fa-solid fa-flask"></i>
-            </div>
-            <h3>Chemie</h3>
-            <p>Mini-quiz · verdien coins</p>
-          </button>
-
-          <button
-            class="feature-card glass-card skill-btn unlockable interactive-skill"
-            data-skill="Fysica"
-          >
-            <div class="feature-icon phys">
-              <i class="fa-solid fa-bolt"></i>
-            </div>
-            <h3>Fysica</h3>
-            <p>Mini-quiz · verdien coins</p>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skill Tree -->
-  </main>
-   
-  <footer class="site-footer">
-    <div class="container footer-wrapper">
-      <div>
-        <h3>Skalor</h3>
-        <p>Skills Integration Lab · Demo</p>
-      </div>
-      <div>
-        <p>&copy; 2026 Skalor</p>
-      </div>
+<footer class="site-footer">
+  <div class="container footer-wrapper">
+    <div>
+      <h3>Skalor</h3>
+      <p>Skills Integration Lab</p>
     </div>
-  </footer>
+    <div>
+      <p>&copy; 2026 Skalor</p>
+    </div>
+  </div>
+</footer>
 
-  <script src="../static/js/app_demo.js"></script>
-  <script src="../static/js/ai_demo.js"></script>
+<script src="../static/js/app_demo.js"></script>
+<script src="../static/js/ai_demo.js"></script>
 </body>
 </html>
